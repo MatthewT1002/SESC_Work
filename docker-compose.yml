@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+
+  student-db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: 8909
+      MYSQL_DATABASE: student_service
+    ports:
+      - "3307:3306"
+    volumes:
+      - student-db-data:/var/lib/mysql
+
+  library-db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: 8909
+      MYSQL_DATABASE: library_service
+    ports:
+      - "3308:3306"
+    volumes:
+      - library-db-data:/var/lib/mysql
+
+  finance-db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: 8909
+      MYSQL_DATABASE: finance_service
+    ports:
+      - "3309:3306"
+    volumes:
+      - finance-db-data:/var/lib/mysql
+
+  student-service:
+    build: ./student_service/student_service
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://student-db:3306/student_service
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 8909
+    depends_on:
+      - student-db
+
+  library-service:
+    build: ./library_service
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://library-db:3306/library_service
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 8909
+    depends_on:
+      - library-db
+
+  finance-service:
+    build: ./finance_service
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://finance-db:3306/finance_service
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 8909
+    depends_on:
+      - finance-db
+
+volumes:
+  student-db-data:
+  library-db-data:
+  finance-db-data:

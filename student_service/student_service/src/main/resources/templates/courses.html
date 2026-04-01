@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Courses</title>
+</head>
+<body>
+
+<h1>Available Courses</h1>
+
+<p th:if="${error}" th:text="${error}" style="color:red;"></p>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Action</th>
+  </tr>
+  <tr th:each="course : ${courses}">
+    <td th:text="${course.courseCode}"></td>
+    <td th:text="${course.courseName}"></td>
+    <td th:text="${course.courseDescription}"></td>
+    <td th:text="'£' + ${course.price}"></td>
+    <td>
+      <form th:action="@{/enrol/{studentId}/{courseId}(studentId=${id}, courseId=${course.id})}" method="post">
+        <button type="submit">Enrol</button>
+      </form>
+    </td>
+  </tr>
+</table>
+
+<br>
+<a th:href="@{/enrolments/{id}(id=${id})}">View My Enrolments</a> |
+<a th:href="@{/home/{id}(id=${id})}">Back to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Graduation Status</title>
+</head>
+<body>
+
+<h1>Graduation Status</h1>
+
+<div th:if="${billsPaid and !#lists.isEmpty(enrolments)}">
+  <p style="color:green;">Congratulations! You are eligible to graduate.</p>
+</div>
+
+<div th:unless="${billsPaid and !#lists.isEmpty(enrolments)}">
+  <p style="color:red;">You are not yet eligible to graduate.</p>
+  <ul>
+    <li th:if="${!billsPaid}">Your finance bills are not fully paid.</li>
+    <li th:if="${#lists.isEmpty(enrolments)}">You are not enrolled on any courses.</li>
+  </ul>
+</div>
+
+<br>
+<a th:href="@{/enrolments/{id}(id=${id})}">Back to My Enrolments</a> |
+<a th:href="@{/home/{id}(id=${id})}">Back to Home</a>
+
+</body>
+</html>

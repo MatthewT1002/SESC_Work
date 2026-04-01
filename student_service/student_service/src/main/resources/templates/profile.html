@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>My Profile</title>
+</head>
+<body>
+
+<h1>My Profile</h1>
+
+<p th:if="${error}" th:text="${error}" style="color:red;"></p>
+<p th:if="${success}" th:text="${success}" style="color:green;"></p>
+
+<div th:if="${student}">
+  <p>Student ID: <strong th:text="${student.studentId}"></strong></p>
+  <p>Username: <strong th:text="${student.username}"></strong></p>
+  <p>Email: <strong th:text="${student.email}"></strong></p>
+</div>
+
+<form th:action="@{/profile/{id}(id=${id})}" method="post">
+  <label>First Name</label><br>
+  <input type="text" name="firstName" th:value="${student?.firstName}"/><br><br>
+
+  <label>Last Name</label><br>
+  <input type="text" name="lastName" th:value="${student?.lastName}"/><br><br>
+
+  <label>Age</label><br>
+  <input type="number" name="age" th:value="${student?.age}"/><br><br>
+
+  <button type="submit">Save Changes</button>
+</form>
+
+<br>
+<a th:href="@{/home/{id}(id=${id})}">Back to Home</a>
+
+</body>
+</html>

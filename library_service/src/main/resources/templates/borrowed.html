@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>My Borrowed Books</title>
+</head>
+<body>
+
+<h1>My Borrowed Books</h1>
+
+<p th:if="${error}" th:text="${error}" style="color:red;"></p>
+
+<p th:if="${#lists.isEmpty(borrowedBooks)}">You have no borrowed books.</p>
+
+<table th:if="${!#lists.isEmpty(borrowedBooks)}">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>ISBN</th>
+    <th>Borrowed At</th>
+    <th>Due At</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+  <tr th:each="book : ${borrowedBooks}">
+    <td th:text="${book.title}"></td>
+    <td th:text="${book.author}"></td>
+    <td th:text="${book.isbn}"></td>
+    <td th:text="${book.borrowedAt}"></td>
+    <td th:text="${book.dueAt}"></td>
+    <td>
+    <span th:if="${book.returnedAt != null and book.overdue}" style="color:red;">
+        Returned Late - £25 fine added<br>
+        Invoice: <strong th:text="${book.invoiceNumber}"></strong>
+    </span>
+      <span th:if="${book.returnedAt != null and !book.overdue}" style="color:green;">Returned on time</span>
+      <span th:if="${book.returnedAt == null}" style="color:orange;">Currently borrowed</span>
+    </td>
+    <td>
+      <form th:if="${book.returnedAt == null}"
+            th:action="@{/library/{studentId}/return/{bookId}(studentId=${studentId}, bookId=${book.id})}"
+            method="post">
+        <button type="submit">Return</button>
+      </form>
+    </td>
+  </tr>
+</table>
+
+<br>
+<a th:href="@{/library/{studentId}(studentId=${studentId})}">Back to Library</a>
+
+</body>
+</html>

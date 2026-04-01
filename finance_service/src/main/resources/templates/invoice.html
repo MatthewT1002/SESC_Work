@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Invoice</title>
+</head>
+<body>
+
+<h1>Invoice</h1>
+
+<p th:if="${error}" th:text="${error}" style="color:red;"></p>
+
+<div th:if="${invoice}">
+  <p>Invoice Number: <strong th:text="${invoice.invoiceNumber}"></strong></p>
+  <p>Student ID: <strong th:text="${invoice.studentId}"></strong></p>
+  <p>Amount: <strong th:text="'£' + ${invoice.amount}"></strong></p>
+  <p>Created: <strong th:text="${invoice.createdAt}"></strong></p>
+
+  <div th:if="${invoice.paid}">
+    <p style="color:green;"><strong>PAID</strong></p>
+    <p>Paid at: <strong th:text="${invoice.paidAt}"></strong></p>
+  </div>
+
+  <div th:unless="${invoice.paid}">
+    <p style="color:red;"><strong>UNPAID</strong></p>
+    <form th:action="@{/pay/{invoiceNumber}(invoiceNumber=${invoice.invoiceNumber})}" method="post">
+      <button type="submit">Pay Invoice</button>
+    </form>
+  </div>
+
+  <br>
+  <a href="/search">Back to Search</a>
+</div>
+
+</body>
+</html>

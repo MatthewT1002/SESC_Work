@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>My Enrolments</title>
+</head>
+<body>
+
+<h1>My Enrolments</h1>
+
+<p th:if="${#lists.isEmpty(enrolments)}">You are not enrolled on any courses yet.</p>
+
+<table th:if="${!#lists.isEmpty(enrolments)}">
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Invoice Number</th>
+  </tr>
+  <tr th:each="enrolment : ${enrolments}">
+    <td th:text="${enrolment.course.courseCode}"></td>
+    <td th:text="${enrolment.course.courseName}"></td>
+    <td th:text="${enrolment.course.courseDescription}"></td>
+    <td th:text="'£' + ${enrolment.course.price}"></td>
+    <td th:text="${enrolment.invoiceNumber}"></td>
+  </tr>
+</table>
+
+<br>
+<a th:href="@{/courses/{id}(id=${id})}">Back to Courses</a> |
+<a th:href="@{/graduation/{id}(id=${id})}">Check Graduation Status</a> |
+<a th:href="@{/home/{id}(id=${id})}">Back to Home</a>
+
+</body>
+</html>

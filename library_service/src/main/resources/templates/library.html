@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Library</title>
+</head>
+<body>
+
+<h1>Library</h1>
+<p>Welcome, <span th:text="${account.username}"></span></p>
+
+<p th:if="${error}" th:text="${error}" style="color:red;"></p>
+
+<form th:action="@{/library/{studentId}(studentId=${studentId})}" method="get">
+  <input type="text" name="query" placeholder="Search for books..." th:value="${query}"/>
+  <button type="submit">Search</button>
+</form>
+
+<br>
+<a th:href="@{/library/{studentId}/borrowed(studentId=${studentId})}">My Borrowed Books</a>
+
+<div th:if="${books}">
+  <h2>Search Results</h2>
+  <table>
+    <tr>
+      <th>Cover</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+    <tr th:each="book : ${books}">
+      <td>
+        <img th:if="${book.thumbnail != ''}" th:src="${book.thumbnail}" width="50"/>
+      </td>
+      <td th:text="${book.title}"></td>
+      <td th:text="${book.author}"></td>
+      <td th:text="${#strings.abbreviate(book.description, 100)}"></td>
+      <td>
+        <form th:action="@{/library/{studentId}/borrow(studentId=${studentId})}" method="post">
+          <input type="hidden" name="isbn" th:value="${book.isbn}"/>
+          <input type="hidden" name="title" th:value="${book.title}"/>
+          <input type="hidden" name="author" th:value="${book.author}"/>
+          <button type="submit">Borrow</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Portal</title>
+</head>
+<body>
+
+<h1>Student Portal</h1>
+
+<nav>
+    <a th:href="@{/profile/{id}(id=${id})}">My Profile</a> |
+    <a th:href="@{/courses/{id}(id=${id})}">Courses</a> |
+    <a th:href="@{/enrolments/{id}(id=${id})}">My Enrolments</a> |
+    <a th:href="@{/graduation/{id}(id=${id})}">Graduation Status</a>
+</nav>
+
+</body>
+</html>

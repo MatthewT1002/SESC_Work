@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Finance Portal</title>
+</head>
+<body>
+
+<h1>Finance Portal</h1>
+
+<p th:if="${error}" th:text="${error}" style="color:red;"></p>
+
+<form action="/search" method="post">
+    <label>Enter Invoice Number</label><br>
+    <input type="text" name="invoiceNumber" placeholder="INV-XXXXXXXX" required/><br><br>
+    <button type="submit">Search</button>
+</form>
+
+</body>
+</html>
