@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.student_service.client.FinanceClientTest" tests="8" skipped="0" failures="8" errors="0" timestamp="2026-04-02T21:47:36.397Z" hostname="DESKTOP-U35L4HD" time="7.285">
+  <properties/>
+  <testcase name="isBillPaid_ReturnsFalse_WhenServiceUnavailable()" classname="com.example.student_service.client.FinanceClientTest" time="6.928">
+    <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.student_service.client.FinanceClientTest.isBillPaid_ReturnsFalse_WhenServiceUnavailable(FinanceClientTest.java:126)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+Unnecessary stubbings detected.
+Clean &amp; maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -&gt; at com.example.student_service.client.FinanceClientTest.isBillPaid_ReturnsFalse_WhenServiceUnavailable(FinanceClientTest.java:126)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="addCourseFee_Success()" classname="com.example.student_service.client.FinanceClientTest" time="0.091">
+    <failure message="org.mockito.exceptions.verification.WantedButNotInvoked: &#10;Wanted but not invoked:&#10;restTemplate.postForObject(&#10;    &quot;http://finance-service:8081/api/finance/bill/c1234567?amount=1200.0&amp;invoiceNo=INV-ABC123&quot;,&#10;    null,&#10;    class java.lang.Void&#10;);&#10;-&gt; at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:398)&#10;Actually, there were zero interactions with this mock.&#10;" type="org.mockito.exceptions.verification.WantedButNotInvoked">Wanted but not invoked:
+restTemplate.postForObject(
+    &quot;http://finance-service:8081/api/finance/bill/c1234567?amount=1200.0&amp;invoiceNo=INV-ABC123&quot;,
+    null,
+    class java.lang.Void
+);
+-&gt; at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:398)
+Actually, there were zero interactions with this mock.
+
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:398)
+	at com.example.student_service.client.FinanceClientTest.addCourseFee_Success(FinanceClientTest.java:74)
+</failure>
+  </testcase>
+  <testcase name="isBillPaid_ReturnsFalse_WhenResponseIsNull()" classname="com.example.student_service.client.FinanceClientTest" time="0.021">
+    <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.student_service.client.FinanceClientTest.isBillPaid_ReturnsFalse_WhenResponseIsNull(FinanceClientTest.java:116)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+Unnecessary stubbings detected.
+Clean &amp; maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -&gt; at com.example.student_service.client.FinanceClientTest.isBillPaid_ReturnsFalse_WhenResponseIsNull(FinanceClientTest.java:116)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="createFinanceAccount_DoesNotThrow_WhenServiceUnavailable()" classname="com.example.student_service.client.FinanceClientTest" time="0.026">
+    <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.student_service.client.FinanceClientTest.createFinanceAccount_DoesNotThrow_WhenServiceUnavailable(FinanceClientTest.java:52)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+Unnecessary stubbings detected.
+Clean &amp; maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -&gt; at com.example.student_service.client.FinanceClientTest.createFinanceAccount_DoesNotThrow_WhenServiceUnavailable(FinanceClientTest.java:52)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="isBillPaid_ReturnsFalse_WhenBillIsNotPaid()" classname="com.example.student_service.client.FinanceClientTest" time="0.02">
+    <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.student_service.client.FinanceClientTest.isBillPaid_ReturnsFalse_WhenBillIsNotPaid(FinanceClientTest.java:106)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+Unnecessary stubbings detected.
+Clean &amp; maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -&gt; at com.example.student_service.client.FinanceClientTest.isBillPaid_ReturnsFalse_WhenBillIsNotPaid(FinanceClientTest.java:106)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="isBillPaid_ReturnsTrue_WhenBillIsPaid()" classname="com.example.student_service.client.FinanceClientTest" time="0.061">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:69)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:41)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:195)
+	at com.example.student_service.client.FinanceClientTest.isBillPaid_ReturnsTrue_WhenBillIsPaid(FinanceClientTest.java:99)
+</failure>
+  </testcase>
+  <testcase name="addCourseFee_DoesNotThrow_WhenServiceUnavailable()" classname="com.example.student_service.client.FinanceClientTest" time="0.026">
+    <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.student_service.client.FinanceClientTest.addCourseFee_DoesNotThrow_WhenServiceUnavailable(FinanceClientTest.java:82)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+Unnecessary stubbings detected.
+Clean &amp; maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -&gt; at com.example.student_service.client.FinanceClientTest.addCourseFee_DoesNotThrow_WhenServiceUnavailable(FinanceClientTest.java:82)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="createFinanceAccount_Success()" classname="com.example.student_service.client.FinanceClientTest" time="0.035">
+    <failure message="org.mockito.exceptions.verification.WantedButNotInvoked: &#10;Wanted but not invoked:&#10;restTemplate.postForObject(&#10;    &quot;http://finance-service:8081/api/finance/account/c1234567&quot;,&#10;    null,&#10;    class java.lang.Void&#10;);&#10;-&gt; at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:398)&#10;Actually, there were zero interactions with this mock.&#10;" type="org.mockito.exceptions.verification.WantedButNotInvoked">Wanted but not invoked:
+restTemplate.postForObject(
+    &quot;http://finance-service:8081/api/finance/account/c1234567&quot;,
+    null,
+    class java.lang.Void
+);
+-&gt; at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:398)
+Actually, there were zero interactions with this mock.
+
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:398)
+	at com.example.student_service.client.FinanceClientTest.createFinanceAccount_Success(FinanceClientTest.java:43)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Finance Service unavailable - defaulting to unpaid
+Finance Service unavailable - skipping bill update
+Finance Service unavailable - defaulting to unpaid
+Finance Service unavailable - skipping account creation
+Finance Service unavailable - defaulting to unpaid
+Finance Service unavailable - defaulting to unpaid
+Finance Service unavailable - skipping bill update
+Finance Service unavailable - skipping account creation
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
