@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.finance_service.controller.FinanceControllerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-04-03T09:18:01.018Z" hostname="DESKTOP-U35L4HD" time="3.461">
+  <properties/>
+  <testcase name="showSearchPage_ReturnsSearchView()" classname="com.example.finance_service.controller.FinanceControllerTest" time="3.154"/>
+  <testcase name="searchInvoice_ReturnsSearchView_WhenInvoiceNotFound()" classname="com.example.finance_service.controller.FinanceControllerTest" time="0.173"/>
+  <testcase name="payInvoice_ReturnsInvoiceView_WhenPaymentSuccessful()" classname="com.example.finance_service.controller.FinanceControllerTest" time="0.042"/>
+  <testcase name="payInvoice_ReturnsSearchView_WhenInvoiceAlreadyPaid()" classname="com.example.finance_service.controller.FinanceControllerTest" time="0.011"/>
+  <testcase name="searchInvoice_ReturnsInvoiceView_WhenInvoiceFound()" classname="com.example.finance_service.controller.FinanceControllerTest" time="0.009"/>
+  <testcase name="payInvoice_ReturnsSearchView_WhenInvoiceNotFound()" classname="com.example.finance_service.controller.FinanceControllerTest" time="0.011"/>
+  <testcase name="index_ReturnsSearchView()" classname="com.example.finance_service.controller.FinanceControllerTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
