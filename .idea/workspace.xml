@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0e1455-5034-4c85-a0e9-9d8dff276aa3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="bf0e1455-5034-4c85-a0e9-9d8dff276aa3" name="Changes" comment="build rebuild">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance_service/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/finance_service/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library_service/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/InvoiceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/InvoiceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/StudentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/StudentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/client/FinanceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/client/FinanceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/client/LibraryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/client/LibraryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Enrolment.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Enrolment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/EnrolmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/EnrolmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +38,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MatthewT1002"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MatthewT1002&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MatthewT1002/SESC_Work.git",
-    "accountId": "a5291a05-a83e-4735-afe1-a125f05e77d4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MatthewT1002/SESC_Work.git&quot;,
+    &quot;accountId&quot;: &quot;a5291a05-a83e-4735-afe1-a125f05e77d4&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3C4ZqjSgDpJq9r9wHUiXAlx7et2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,7 +65,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -78,6 +86,19 @@
       <option name="presentableId" value="Default" />
       <updated>1775646995618</updated>
     </task>
+    <task id="LOCAL-00001" summary="build rebuild">
+      <option name="closed" value="true" />
+      <created>1775647244451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775647244451</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build rebuild" />
+    <option name="LAST_COMMIT_MESSAGE" value="build rebuild" />
   </component>
 </project>

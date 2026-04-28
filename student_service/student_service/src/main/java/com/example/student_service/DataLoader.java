@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+// Dummy course data TODO: Replace whole thing with database and admin portal to edit courses.
+
 @Component
 public class DataLoader implements CommandLineRunner {
 
