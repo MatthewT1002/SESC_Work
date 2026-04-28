@@ -14,7 +14,7 @@ spring:
 
 google:
   books:
-    api-key: AIzaSyAi_N6aQ1_zVc5KyysTHgxSaQYqE7j8UBA
+    api-key:
     url: https://www.googleapis.com/books/v1
 
 server:

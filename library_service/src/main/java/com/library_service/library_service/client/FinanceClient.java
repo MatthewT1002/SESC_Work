@@ -4,6 +4,7 @@ import com.library_service.library_service.InvoiceGenerator;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+// HTTP Client responsible for all communication between the Library Service and Finance Service.
 @Component
 public class FinanceClient {
 
@@ -14,6 +15,7 @@ public class FinanceClient {
         this.restTemplate = new RestTemplate();
     }
 
+    // Raises an overdue fine invoice against a students finance account.
     public void addOverdueFine(String studentId, Double amount, String invoiceNumber) {
         try {
             restTemplate.postForObject(

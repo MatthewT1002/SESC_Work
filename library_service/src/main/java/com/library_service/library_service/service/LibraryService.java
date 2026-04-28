@@ -14,6 +14,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Service layer for all library related business logic.
+ */
 @Service
 public class LibraryService {
 
@@ -23,12 +26,15 @@ public class LibraryService {
     @Autowired
     private BorrowedBookRepository borrowedBookRepository;
 
+    // Client for the Google book public api.
     @Autowired
     private GoogleBooksClient googleBooksClient;
 
+    // HTTP client for the Finance Service.
     @Autowired
     private FinanceClient financeClient;
 
+    // Creates a new library account for a student.
     public LibraryAccount createAccount(String studentId, String username) {
         if (libraryAccountRepository.existsByStudentId(studentId)) {
             throw new RuntimeException("Account already exists for this student");
@@ -39,15 +45,18 @@ public class LibraryService {
         return libraryAccountRepository.save(account);
     }
 
+    // Retrieves a library account by student id.
     public LibraryAccount getAccount(String studentId) {
         return libraryAccountRepository.findByStudentId(studentId)
                 .orElseThrow(() -> new RuntimeException("Library account not found"));
     }
 
+    // Searches for books via the Google Books API.
     public List<Map<String, String>> searchBooks(String query) {
         return googleBooksClient.searchBooks(query);
     }
 
+    // Records a new book borrowing transaction for a student. Won't allow more than 10 books and 2 of the same book.
     public BorrowedBook borrowBook(String studentId, String isbn, String title, String author) {
         LibraryAccount account = getAccount(studentId);
 
@@ -71,6 +80,7 @@ public class LibraryService {
         return borrowedBookRepository.save(book);
     }
 
+    // Records the return of a borrowed book and handles overdue fines.
     public BorrowedBook returnBook(Long borrowedBookId) {
         BorrowedBook book = borrowedBookRepository.findById(borrowedBookId)
                 .orElseThrow(() -> new RuntimeException("Borrowed book record not found"));
@@ -88,6 +98,7 @@ public class LibraryService {
         return borrowedBookRepository.save(book);
     }
 
+    // Retrieves all borrow records (active and returned) for a given student.
     public List<BorrowedBook> getBorrowedBooks(String studentId) {
         LibraryAccount account = getAccount(studentId);
         return borrowedBookRepository.findByLibraryAccount(account);

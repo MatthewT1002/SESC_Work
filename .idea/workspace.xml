@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0e1455-5034-4c85-a0e9-9d8dff276aa3" name="Changes" comment="comments">
+    <list default="true" id="bf0e1455-5034-4c85-a0e9-9d8dff276aa3" name="Changes" comment="build rebuild">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance_service/src/main/java/com/example/finance_service/repository/InvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/finance_service/src/main/java/com/example/finance_service/repository/InvoiceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance_service/src/main/java/com/example/finance_service/service/FinanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/finance_service/src/main/java/com/example/finance_service/service/FinanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/InvoiceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/InvoiceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/LibraryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/LibraryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/client/FinanceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/client/FinanceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/client/GoogleBooksClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/client/GoogleBooksClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/model/BorrowedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/model/BorrowedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/model/LibraryAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/model/LibraryAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/repository/BorrowedBookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/repository/BorrowedBookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/repository/LibraryAccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/repository/LibraryAccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/service/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/java/com/library_service/library_service/service/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/library_service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +56,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,35 +84,19 @@
       <option name="presentableId" value="Default" />
       <updated>1775646995618</updated>
     </task>
-    <task id="LOCAL-00001" summary="comments">
+    <task id="LOCAL-00001" summary="build rebuild">
       <option name="closed" value="true" />
-      <created>1777372019908</created>
+      <created>1775647244451</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1777372019908</updated>
+      <updated>1775647244451</updated>
     </task>
-    <task id="LOCAL-00002" summary="comments">
-      <option name="closed" value="true" />
-      <created>1777372142426</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1777372142426</updated>
-    </task>
-    <task id="LOCAL-00003" summary="comments">
-      <option name="closed" value="true" />
-      <created>1777373121198</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1777373121198</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments" />
+    <MESSAGE value="build rebuild" />
+    <option name="LAST_COMMIT_MESSAGE" value="build rebuild" />
   </component>
 </project>
