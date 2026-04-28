@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0e1455-5034-4c85-a0e9-9d8dff276aa3" name="Changes" comment="build rebuild">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="bf0e1455-5034-4c85-a0e9-9d8dff276aa3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/InvoiceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/InvoiceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/StudentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/StudentServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/client/FinanceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/client/FinanceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/client/LibraryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/client/LibraryClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Enrolment.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Enrolment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/EnrolmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/EnrolmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance_service/src/main/java/com/example/financeseperate/FinanceSeperateApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance_service/src/test/java/com/example/financeseperate/FinanceSeperateApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/student_service/student_service/src/main/java/com/example/student_service/service/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +58,10 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -86,19 +79,6 @@
       <option name="presentableId" value="Default" />
       <updated>1775646995618</updated>
     </task>
-    <task id="LOCAL-00001" summary="build rebuild">
-      <option name="closed" value="true" />
-      <created>1775647244451</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1775647244451</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="build rebuild" />
-    <option name="LAST_COMMIT_MESSAGE" value="build rebuild" />
   </component>
 </project>
